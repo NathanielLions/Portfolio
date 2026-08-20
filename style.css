@@ -367,3 +367,248 @@ font-family: "Lato", sans-serif;
 ```
 
 }
+
+/* =================================
+   About Page - Chat Conversation
+   ================================= */
+
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 6%;
+}
+
+
+/* Page heading */
+
+.about-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about-header h1 {
+    margin: 0 0 15px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+
+    color: #222222;
+}
+
+.about-header p {
+    margin: 0;
+
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+
+    color: #4d4d4d;
+}
+
+
+/* =================================
+   Introduction
+   ================================= */
+
+.about-introduction {
+    display: flex;
+    align-items: stretch;
+
+    margin-bottom: 90px;
+
+    background: #ffffff;
+
+    border-radius: 35px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.about-introduction-image {
+    width: 40%;
+    min-height: 400px;
+}
+
+.about-introduction-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.about-introduction-text {
+    flex: 1;
+
+    padding: 55px;
+}
+
+.about-introduction-text h2 {
+    margin: 0 0 25px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+
+    color: #222222;
+}
+
+.about-introduction-text p {
+    margin: 0 0 25px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    line-height: 1.7;
+
+    color: #4d4d4d;
+}
+
+
+/* =================================
+   Conversation Sections
+   ================================= */
+
+.conversation-section {
+    margin-bottom: 100px;
+}
+
+.conversation-title {
+    margin-bottom: 50px;
+}
+
+.conversation-title h2 {
+    margin: 0 0 10px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+
+    color: #222222;
+}
+
+.conversation-title p {
+    margin: 0;
+
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+
+    color: #777777;
+}
+
+
+/* =================================
+   Chat Questions
+   ================================= */
+
+.chat-question {
+    width: fit-content;
+    max-width: 70%;
+
+    margin: 0 0 25px auto;
+
+    padding: 18px 25px;
+
+    background: #333366;
+    color: #ffffff;
+
+    border-radius: 25px 25px 6px 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.chat-question p {
+    margin: 0;
+
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   Chat Answers
+   ================================= */
+
+.chat-answer {
+    width: fit-content;
+    max-width: 75%;
+
+    margin: 0 auto 40px 0;
+
+    padding: 22px 28px;
+
+    background: #ffffff;
+    color: #4d4d4d;
+
+    border-radius: 25px 25px 25px 6px;
+
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+}
+
+.chat-answer p {
+    margin: 0 0 18px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+.chat-answer p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Final answer */
+
+.final-answer {
+    margin-bottom: 0;
+}
+
+
+/* =================================
+   Responsive Layout
+   ================================= */
+
+@media (max-width: 700px) {
+
+    .about-page {
+        padding: 60px 5%;
+    }
+
+    .about-header h1 {
+        font-size: 48px;
+    }
+
+    .about-introduction {
+        flex-direction: column;
+    }
+
+    .about-introduction-image {
+        width: 100%;
+        height: 350px;
+        min-height: 0;
+    }
+
+    .about-introduction-text {
+        padding: 35px;
+    }
+
+    .about-introduction-text h2 {
+        font-size: 38px;
+    }
+
+    .chat-question,
+    .chat-answer {
+        max-width: 90%;
+    }
+
+    .chat-question p,
+    .chat-answer p {
+        font-size: 18px;
+    }
+
+}
