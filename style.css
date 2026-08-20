@@ -708,6 +708,28 @@ body {
 
 @media (max-width: 800px) {
 
+       /* Footer */
+
+    .footer {
+        padding: 55px 6% 35px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+    .footer-contact {
+        min-width: 0;
+
+        width: 100%;
+    }
+
+    .footer-contact h2 {
+        font-size: 32px;
+    }
+   
     /* Banner */
 
     .banner {
