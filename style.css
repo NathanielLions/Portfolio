@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;
+    background: #f4f4f4;
 }
 
 .banner {
@@ -54,7 +54,7 @@ body {
 
     overflow: hidden;
 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .about-content {
