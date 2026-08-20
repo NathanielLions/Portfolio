@@ -35,7 +35,11 @@ body {
 }
 
 .banner h1 {
+    position: relative;
+    z-index: 1;
+
     margin: 0;
+
     color: white;
     font-family: "Lato", sans-serif;
     font-size: 56px;
@@ -44,9 +48,28 @@ body {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+.banner::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 120px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(244, 244, 244, 0),
+        #f4f4f4
+    );
+
+    pointer-events: none;
+}
+
 .about-section {
-    padding: 80px 6%;
-    background: #ffffff;
+    padding: 90px 6%;
+    background: #f4f4f4;
 }
 
 .about-card {
