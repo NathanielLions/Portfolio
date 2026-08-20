@@ -137,3 +137,233 @@ body {
 
     display: block;
 }
+
+/* ================================
+Navigation
+================================ */
+
+.navbar {
+width: 100%;
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+
+gap: 40px;
+
+padding: 22px 30px;
+
+background: #ffffff;
+
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+```
+
+}
+
+.navbar a {
+font-family: "Lato", sans-serif;
+font-size: 20px;
+font-weight: 700;
+
+```
+color: #4d4d4d;
+
+text-decoration: none;
+
+transition: color 0.2s ease;
+```
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+color: #333366;
+}
+
+/* ================================
+About Page
+================================ */
+
+.about-page {
+max-width: 1300px;
+
+```
+margin: 0 auto;
+
+padding: 80px 6%;
+```
+
+}
+
+/* Page heading */
+
+.about-header {
+text-align: center;
+
+```
+margin-bottom: 70px;
+```
+
+}
+
+.about-header h1 {
+margin: 0 0 15px;
+
+```
+font-family: "Lato", sans-serif;
+font-size: 64px;
+font-weight: 700;
+
+color: #222222;
+```
+
+}
+
+.about-header p {
+margin: 0;
+
+```
+font-family: "Lato", sans-serif;
+font-size: 22px;
+
+color: #4d4d4d;
+```
+
+}
+
+/* Profile card */
+
+.about-profile {
+display: flex;
+align-items: stretch;
+
+```
+background: #ffffff;
+
+border-radius: 35px;
+
+overflow: hidden;
+
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+margin-bottom: 80px;
+```
+
+}
+
+.about-profile-image {
+width: 40%;
+
+```
+min-height: 450px;
+```
+
+}
+
+.about-profile-image img {
+width: 100%;
+height: 100%;
+
+```
+display: block;
+
+object-fit: cover;
+```
+
+}
+
+.about-profile-content {
+flex: 1;
+
+```
+padding: 60px;
+```
+
+}
+
+.about-profile-content h2 {
+margin: 0 0 25px;
+
+```
+font-family: "Lato", sans-serif;
+font-size: 44px;
+font-weight: 700;
+
+color: #222222;
+```
+
+}
+
+.about-profile-content p {
+margin: 0 0 25px;
+
+```
+font-family: "Lato", sans-serif;
+font-size: 21px;
+
+line-height: 1.7;
+
+color: #4d4d4d;
+```
+
+}
+
+/* Biography */
+
+.biography {
+background: #ffffff;
+
+```
+border-radius: 35px;
+
+padding: 60px;
+
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+```
+
+}
+
+.biography h2 {
+margin: 0 0 30px;
+
+```
+font-family: "Lato", sans-serif;
+font-size: 44px;
+font-weight: 700;
+
+color: #222222;
+```
+
+}
+
+.biography p {
+margin: 0;
+
+```
+font-family: "Lato", sans-serif;
+font-size: 21px;
+
+line-height: 1.8;
+
+color: #4d4d4d;
+```
+
+}
+
+/* ================================
+Footer
+================================ */
+
+.footer {
+padding: 40px;
+
+```
+text-align: center;
+
+color: #777777;
+
+font-family: "Lato", sans-serif;
+```
+
+}
