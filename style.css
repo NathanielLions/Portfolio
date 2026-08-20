@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
+
+/* =================================
+   General
+   ================================= */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background: #f4f4f4;
+
+    color: #222222;
 }
+
+
+/* =================================
+   Homepage Banner
+   ================================= */
 
 .banner {
     height: 500px;
@@ -16,8 +30,8 @@ body {
     background-image:
         linear-gradient(
             to bottom,
-            rgba(20, 20, 50, 0.55) 0%,
-            rgba(20, 20, 50, 0.55) 65%,
+            rgba(20, 20, 50, 0.70) 0%,
+            rgba(20, 20, 50, 0.70) 65%,
             rgba(20, 20, 50, 0.00) 100%
         ),
         url("assets/banner/banner.jpg");
@@ -26,6 +40,7 @@ body {
     background-position: center;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -36,20 +51,27 @@ body {
 
 .banner h1 {
     position: relative;
+
     z-index: 1;
 
     margin: 0;
 
     color: white;
+
     font-family: "Lato", sans-serif;
+
     font-size: 56px;
     font-weight: 700;
 
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+
+/* Banner fade */
+
 .banner::after {
     content: "";
+
     position: absolute;
 
     left: 0;
@@ -58,37 +80,49 @@ body {
 
     height: 120px;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(244, 244, 244, 0),
-        #f4f4f4
-    );
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(244, 244, 244, 0),
+            #f4f4f4
+        );
 
     pointer-events: none;
 }
 
+
+/* =================================
+   Homepage About Section
+   ================================= */
+
 .about-section {
     padding: 90px 6%;
+
     background: #f4f4f4;
 }
 
 .about-card {
     max-width: 1300px;
+
     margin: 0 auto;
 
     display: flex;
+
     align-items: stretch;
 
     background: #ffffff;
+
     border-radius: 35px;
 
     overflow: hidden;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .about-content {
     flex: 1;
+
     padding: 55px;
 }
 
@@ -96,6 +130,7 @@ body {
     margin: 0 0 25px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 48px;
     font-weight: 700;
 }
@@ -104,7 +139,9 @@ body {
     margin: 0 0 35px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 22px;
+
     line-height: 1.6;
 
     color: #4d4d4d;
@@ -112,10 +149,12 @@ body {
 
 .read-more {
     font-family: "Lato", sans-serif;
+
     font-size: 22px;
     font-weight: 700;
 
     color: #4d4d4d;
+
     text-decoration: none;
 }
 
@@ -125,6 +164,7 @@ body {
 
 .about-image {
     width: 40%;
+
     min-height: 350px;
 }
 
@@ -133,256 +173,69 @@ body {
     height: 100%;
 
     object-fit: cover;
+
     object-position: center;
 
     display: block;
 }
 
-/* ================================
-Navigation
-================================ */
+
+/* =================================
+   Navigation
+   ================================= */
 
 .navbar {
-width: 100%;
+    width: 100%;
 
-```
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
 
-gap: 40px;
+    justify-content: center;
+    align-items: center;
 
-padding: 22px 30px;
+    gap: 40px;
 
-background: #ffffff;
+    padding: 22px 30px;
 
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-```
+    background: #ffffff;
 
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .navbar a {
-font-family: "Lato", sans-serif;
-font-size: 20px;
-font-weight: 700;
+    font-family: "Lato", sans-serif;
 
-```
-color: #4d4d4d;
+    font-size: 20px;
+    font-weight: 700;
 
-text-decoration: none;
+    color: #4d4d4d;
 
-transition: color 0.2s ease;
-```
+    text-decoration: none;
 
+    transition: color 0.2s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
-color: #333366;
+    color: #333366;
 }
 
-/* ================================
-About Page
-================================ */
-
-.about-page {
-max-width: 1300px;
-
-```
-margin: 0 auto;
-
-padding: 80px 6%;
-```
-
-}
-
-/* Page heading */
-
-.about-header {
-text-align: center;
-
-```
-margin-bottom: 70px;
-```
-
-}
-
-.about-header h1 {
-margin: 0 0 15px;
-
-```
-font-family: "Lato", sans-serif;
-font-size: 64px;
-font-weight: 700;
-
-color: #222222;
-```
-
-}
-
-.about-header p {
-margin: 0;
-
-```
-font-family: "Lato", sans-serif;
-font-size: 22px;
-
-color: #4d4d4d;
-```
-
-}
-
-/* Profile card */
-
-.about-profile {
-display: flex;
-align-items: stretch;
-
-```
-background: #ffffff;
-
-border-radius: 35px;
-
-overflow: hidden;
-
-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-
-margin-bottom: 80px;
-```
-
-}
-
-.about-profile-image {
-width: 40%;
-
-```
-min-height: 450px;
-```
-
-}
-
-.about-profile-image img {
-width: 100%;
-height: 100%;
-
-```
-display: block;
-
-object-fit: cover;
-```
-
-}
-
-.about-profile-content {
-flex: 1;
-
-```
-padding: 60px;
-```
-
-}
-
-.about-profile-content h2 {
-margin: 0 0 25px;
-
-```
-font-family: "Lato", sans-serif;
-font-size: 44px;
-font-weight: 700;
-
-color: #222222;
-```
-
-}
-
-.about-profile-content p {
-margin: 0 0 25px;
-
-```
-font-family: "Lato", sans-serif;
-font-size: 21px;
-
-line-height: 1.7;
-
-color: #4d4d4d;
-```
-
-}
-
-/* Biography */
-
-.biography {
-background: #ffffff;
-
-```
-border-radius: 35px;
-
-padding: 60px;
-
-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-```
-
-}
-
-.biography h2 {
-margin: 0 0 30px;
-
-```
-font-family: "Lato", sans-serif;
-font-size: 44px;
-font-weight: 700;
-
-color: #222222;
-```
-
-}
-
-.biography p {
-margin: 0;
-
-```
-font-family: "Lato", sans-serif;
-font-size: 21px;
-
-line-height: 1.8;
-
-color: #4d4d4d;
-```
-
-}
-
-/* ================================
-Footer
-================================ */
-
-.footer {
-padding: 40px;
-
-```
-text-align: center;
-
-color: #777777;
-
-font-family: "Lato", sans-serif;
-```
-
-}
 
 /* =================================
-   About Page - Chat Conversation
+   About Page
    ================================= */
 
 .about-page {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 80px 6%;
 }
 
-
-/* Page heading */
-
 .about-header {
     text-align: center;
+
     margin-bottom: 70px;
 }
 
@@ -390,6 +243,7 @@ font-family: "Lato", sans-serif;
     margin: 0 0 15px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 64px;
     font-weight: 700;
 
@@ -400,18 +254,18 @@ font-family: "Lato", sans-serif;
     margin: 0;
 
     font-family: "Lato", sans-serif;
+
     font-size: 22px;
 
     color: #4d4d4d;
 }
 
 
-/* =================================
-   Introduction
-   ================================= */
+/* About introduction */
 
 .about-introduction {
     display: flex;
+
     align-items: stretch;
 
     margin-bottom: 90px;
@@ -419,13 +273,16 @@ font-family: "Lato", sans-serif;
     background: #ffffff;
 
     border-radius: 35px;
+
     overflow: hidden;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .about-introduction-image {
     width: 40%;
+
     min-height: 400px;
 }
 
@@ -448,6 +305,7 @@ font-family: "Lato", sans-serif;
     margin: 0 0 25px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 46px;
     font-weight: 700;
 
@@ -458,7 +316,9 @@ font-family: "Lato", sans-serif;
     margin: 0 0 25px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 21px;
+
     line-height: 1.7;
 
     color: #4d4d4d;
@@ -466,7 +326,7 @@ font-family: "Lato", sans-serif;
 
 
 /* =================================
-   Conversation Sections
+   About Page Chat Sections
    ================================= */
 
 .conversation-section {
@@ -481,6 +341,7 @@ font-family: "Lato", sans-serif;
     margin: 0 0 10px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 44px;
     font-weight: 700;
 
@@ -491,18 +352,18 @@ font-family: "Lato", sans-serif;
     margin: 0;
 
     font-family: "Lato", sans-serif;
+
     font-size: 20px;
 
     color: #777777;
 }
 
 
-/* =================================
-   Chat Questions
-   ================================= */
+/* Questions - right side */
 
 .chat-question {
     width: fit-content;
+
     max-width: 70%;
 
     margin: 0 0 25px auto;
@@ -510,17 +371,20 @@ font-family: "Lato", sans-serif;
     padding: 18px 25px;
 
     background: #333366;
+
     color: #ffffff;
 
     border-radius: 25px 25px 6px 25px;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
 }
 
 .chat-question p {
     margin: 0;
 
     font-family: "Lato", sans-serif;
+
     font-size: 20px;
     font-weight: 700;
 
@@ -528,12 +392,11 @@ font-family: "Lato", sans-serif;
 }
 
 
-/* =================================
-   Chat Answers
-   ================================= */
+/* Answers - left side */
 
 .chat-answer {
     width: fit-content;
+
     max-width: 75%;
 
     margin: 0 auto 40px 0;
@@ -541,17 +404,20 @@ font-family: "Lato", sans-serif;
     padding: 22px 28px;
 
     background: #ffffff;
+
     color: #4d4d4d;
 
     border-radius: 25px 25px 25px 6px;
 
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+    box-shadow:
+        0 6px 22px rgba(0, 0, 0, 0.10);
 }
 
 .chat-answer p {
     margin: 0 0 18px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 20px;
 
     line-height: 1.7;
@@ -562,68 +428,19 @@ font-family: "Lato", sans-serif;
 }
 
 
-/* Final answer */
-
-.final-answer {
-    margin-bottom: 0;
-}
-
-
-/* =================================
-   Responsive Layout
-   ================================= */
-
-@media (max-width: 700px) {
-
-    .about-page {
-        padding: 60px 5%;
-    }
-
-    .about-header h1 {
-        font-size: 48px;
-    }
-
-    .about-introduction {
-        flex-direction: column;
-    }
-
-    .about-introduction-image {
-        width: 100%;
-        height: 350px;
-        min-height: 0;
-    }
-
-    .about-introduction-text {
-        padding: 35px;
-    }
-
-    .about-introduction-text h2 {
-        font-size: 38px;
-    }
-
-    .chat-question,
-    .chat-answer {
-        max-width: 90%;
-    }
-
-    .chat-question p,
-    .chat-answer p {
-        font-size: 18px;
-    }
-
-}
-
 /* =================================
    Video Production Projects
    ================================= */
 
 .projects-section {
     padding: 90px 6%;
+
     background: #f4f4f4;
 }
 
 .section-heading {
     max-width: 1100px;
+
     margin: 0 auto 45px;
 }
 
@@ -631,6 +448,7 @@ font-family: "Lato", sans-serif;
     margin: 0 0 12px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 52px;
     font-weight: 700;
 
@@ -641,6 +459,7 @@ font-family: "Lato", sans-serif;
     margin: 0;
 
     font-family: "Lato", sans-serif;
+
     font-size: 21px;
 
     color: #777777;
@@ -655,6 +474,7 @@ font-family: "Lato", sans-serif;
     position: relative;
 
     display: flex;
+
     align-items: stretch;
 
     max-width: 1100px;
@@ -667,11 +487,12 @@ font-family: "Lato", sans-serif;
 
     overflow: hidden;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 
-/* Flip the entire project */
+/* Alternate project */
 
 .project-card.reverse {
     flex-direction: row-reverse;
@@ -679,7 +500,7 @@ font-family: "Lato", sans-serif;
 
 
 /* =================================
-   Project Image
+   Project Thumbnail
    ================================= */
 
 .project-media {
@@ -688,11 +509,14 @@ font-family: "Lato", sans-serif;
     padding: 30px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
 
 .project-video-link {
+    position: relative;
+
     display: block;
 
     width: 100%;
@@ -702,9 +526,13 @@ font-family: "Lato", sans-serif;
     overflow: hidden;
 
     cursor: pointer;
+
+    border-radius: 24px;
+
+    text-decoration: none;
 }
 
-.project-media img {
+.project-thumbnail {
     width: 100%;
     height: 100%;
 
@@ -712,13 +540,43 @@ font-family: "Lato", sans-serif;
 
     object-fit: cover;
 
-    border-radius: 0;
+    border-radius: 24px;
 
-    transition: transform 0.25s ease;
+    transition:
+        transform 0.25s ease;
 }
 
-.project-video-link:hover img {
+.project-video-link:hover .project-thumbnail {
     transform: scale(1.025);
+}
+
+
+/* =================================
+   Play / Pause Button
+   ================================= */
+
+.play-button {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 110px;
+    height: 110px;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.project-video-link:hover .play-button {
+    transform:
+        translate(-50%, -50%)
+        scale(1.08);
 }
 
 
@@ -738,7 +596,9 @@ font-family: "Lato", sans-serif;
     margin: 0 0 12px;
 
     font-family: "Lato", sans-serif;
+
     font-size: clamp(32px, 3.5vw, 52px);
+
     font-weight: 700;
 
     line-height: 1.05;
@@ -754,6 +614,7 @@ font-family: "Lato", sans-serif;
     margin: 0 0 25px;
 
     font-family: "Lato", sans-serif;
+
     font-size: 20px;
     font-weight: 700;
 
@@ -766,6 +627,7 @@ font-family: "Lato", sans-serif;
     margin: 0;
 
     font-family: "Lato", sans-serif;
+
     font-size: 18px;
 
     line-height: 1.6;
@@ -775,7 +637,7 @@ font-family: "Lato", sans-serif;
 
 
 /* =================================
-   Read More
+   Project Read More
    ================================= */
 
 .project-read-more {
@@ -788,6 +650,7 @@ font-family: "Lato", sans-serif;
     height: 70px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -798,6 +661,7 @@ font-family: "Lato", sans-serif;
     color: #4d4d4d;
 
     font-family: "Lato", sans-serif;
+
     font-size: 18px;
     font-weight: 700;
 
@@ -812,12 +676,29 @@ font-family: "Lato", sans-serif;
 
 .project-read-more:hover {
     background: #bdbdbd;
+
     color: #222222;
 }
 
 .project-read-more .arrow {
     font-size: 24px;
+
     line-height: 1;
+}
+
+
+/* =================================
+   Footer
+   ================================= */
+
+.footer {
+    padding: 40px;
+
+    text-align: center;
+
+    color: #777777;
+
+    font-family: "Lato", sans-serif;
 }
 
 
@@ -826,6 +707,78 @@ font-family: "Lato", sans-serif;
    ================================= */
 
 @media (max-width: 800px) {
+
+    /* Banner */
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+    }
+
+
+    /* Homepage About */
+
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+
+        height: 350px;
+
+        min-height: 0;
+    }
+
+
+    /* About page */
+
+    .about-page {
+        padding: 60px 5%;
+    }
+
+    .about-header h1 {
+        font-size: 48px;
+    }
+
+    .about-introduction {
+        flex-direction: column;
+    }
+
+    .about-introduction-image {
+        width: 100%;
+
+        height: 350px;
+
+        min-height: 0;
+    }
+
+    .about-introduction-text {
+        padding: 35px;
+    }
+
+    .about-introduction-text h2 {
+        font-size: 38px;
+    }
+
+
+    /* Chat bubbles */
+
+    .chat-question,
+    .chat-answer {
+        max-width: 90%;
+    }
+
+    .chat-question p,
+    .chat-answer p {
+        font-size: 18px;
+    }
+
+
+    /* Projects */
 
     .projects-section {
         padding: 70px 5%;
@@ -868,6 +821,12 @@ font-family: "Lato", sans-serif;
 
     .project-read-more {
         width: 170px;
+
         height: 65px;
+    }
+
+    .play-button {
+        width: 85px;
+        height: 85px;
     }
 }
