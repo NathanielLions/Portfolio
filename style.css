@@ -1,1 +1,32 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.banner {
+    height: 500px;
+
+    background-image: url("assets/banner/banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
