@@ -1212,3 +1212,91 @@ body {
     }
 
 }
+
+
+/* =================================
+   Navigation
+   ================================= */
+
+.navbar {
+    width: 100%;
+
+    padding: 0 6%;
+
+    background: #222222;
+
+    color: #ffffff;
+}
+
+.navbar-content {
+    max-width: 1200px;
+
+    min-height: 80px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* Home */
+
+.nav-home {
+    font-family: "Lato", sans-serif;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.nav-home:hover {
+    opacity: 0.75;
+}
+
+
+/* Right-side links */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+.nav-links a {
+    font-family: "Lato", sans-serif;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #cccccc;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* Current page */
+
+.nav-links a.active {
+    color: #ffffff;
+}
